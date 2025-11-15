@@ -2,8 +2,25 @@
   "name": "custom-fold-markers",
   "displayName": "Custom Fold Markers",
   "description": "Custom folding markers for VS Code",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "swaxx",
   "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swax/custom-fold-markers"
+  },
+  "keywords": [
+    "folding",
+    "fold",
+    "markers",
+    "regions",
+    "code-folding",
+    "collapse",
+    "comments",
+    "custom-regions",
+    "code-markers"
+  ],
   "engines": {
     "vscode": "^1.85.0"
   },

@@ -1,6 +1,13 @@
 # Custom Fold Markers
 
+[![Version](https://img.shields.io/visual-studio-marketplace/v/swaxx.custom-fold-markers)](https://marketplace.visualstudio.com/items?itemName=swaxx.custom-fold-markers)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/swaxx.custom-fold-markers)](https://marketplace.visualstudio.com/items?itemName=swaxx.custom-fold-markers)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/swaxx.custom-fold-markers)](https://marketplace.visualstudio.com/items?itemName=swaxx.custom-fold-markers)
+[![License](https://img.shields.io/github/license/swax/custom-fold-markers)](https://github.com/swax/custom-fold-markers/blob/main/LICENSE)
+
 Define custom folding regions in your code using configurable markers. Perfect for creating collapsible sections in any file type with custom comment styles or markers.
+
+![Custom Fold Markers in action](images/screenshot.png)
 
 ## Features
 
@@ -17,8 +24,7 @@ With the default configuration (`//{` and `//}`), you can create foldable region
 //{ Main function
 function doSomething() {
     // Your code here
-}
-//}
+} //}
 
 //{ Helper functions
 function helper1() { }
@@ -98,16 +104,11 @@ VS Code version 1.85.0 or higher
 
 ## Known Issues
 
-None at this time. Please report issues on the [GitHub repository](https://github.com/yourusername/custom-fold-markers/issues).
+None at this time. Please report issues on the [GitHub repository](https://github.com/swax/custom-fold-markers/issues).
 
 ## Release Notes
 
-### 0.0.1
-
-Initial release with the following features:
-- Custom fold marker configuration using regex patterns
-- Automatic folding range detection
-- Toggle all custom folds command with keyboard shortcut
+See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ## License
 
