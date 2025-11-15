@@ -3,6 +3,7 @@
   "displayName": "Custom Fold Markers",
   "description": "Custom folding markers for VS Code",
   "version": "0.0.1",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -14,15 +15,27 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [],
+    "commands": [
+      {
+        "command": "customFoldMarkers.toggleAll",
+        "title": "Toggle All Custom Fold Markers"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "customFoldMarkers.toggleAll",
+        "key": "ctrl+k ctrl+c",
+        "when": "editorTextFocus"
+      }
+    ],
     "configuration": {
       "title": "Custom Fold Markers",
       "properties": {
         "editor.customFoldMarkers": {
           "type": "object",
           "default": {
-            "start": "^//\\{",
-            "end": "^//\\}"
+            "start": "//\\{",
+            "end": "//\\}"
           },
           "description": "Define custom fold markers using regular expressions",
           "properties": {
