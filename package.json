@@ -1,0 +1,58 @@
+{
+  "name": "custom-fold-markers",
+  "displayName": "Custom Fold Markers",
+  "description": "Custom folding markers for VS Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [],
+    "configuration": {
+      "title": "Custom Fold Markers",
+      "properties": {
+        "editor.customFoldMarkers": {
+          "type": "object",
+          "default": {
+            "start": "^//\\{",
+            "end": "^//\\}"
+          },
+          "description": "Define custom fold markers using regular expressions",
+          "properties": {
+            "start": {
+              "type": "string",
+              "description": "Regular expression pattern for fold start marker"
+            },
+            "end": {
+              "type": "string",
+              "description": "Regular expression pattern for fold end marker"
+            }
+          }
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  }
+}
